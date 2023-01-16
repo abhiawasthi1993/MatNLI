@@ -6,3 +6,22 @@ Data and codes for paper: Non-linear Inversion and its implementation for mechan
 > 
 
 # Installation
+
+
+
+
+
+# Citing
+
+```
+@article{awasthi2023NLI,
+    title = {Non-linear Inversion and its implementation for mechanical characterization of tissues through elastography},
+    author = {Abhilash Awasthi, Moirangthem Dinachandra, Puneet Mahajan, Ashish Suri, and Sitikantha Roy},
+    journal = {Advances in Engineering Software},
+    pages = {},
+    year = {2023},
+    issn = {},
+    doi = {https://doi.org/},
+    url = {https://www.sciencedirect.com/science/article/}
+}
+```
