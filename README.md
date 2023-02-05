@@ -10,7 +10,10 @@ The present study demonstrate a parallel MATLAB implementation of an efficient n
 > 
 
 # Installation
+To run the inversion for a particular type of material model, change the current MATLAB directory to that folder and run file "InverseNLI.m".
 
+# Requirements:
+The Optimization toolbox in MATLAB is required. Make sure it is there in your MATLAB installtion.
 
 
 
