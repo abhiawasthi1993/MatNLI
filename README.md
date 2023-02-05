@@ -19,7 +19,7 @@ The present study demonstrate a parallel MATLAB implementation of an efficient n
 
 ```
 @article{awasthi2023NLI,
-    title = {Non-linear Inversion and its implementation for mechanical characterization of tissues through elastography},
+    title = {MatNLI: An Open-source MATLAB-based solver for the Non-linear Inversion in Elastography},
     author = {Abhilash Awasthi, Moirangthem Dinachandra, Puneet Mahajan, Ashish Suri, and Sitikantha Roy},
     journal = {Advances in Engineering Software},
     pages = {},
