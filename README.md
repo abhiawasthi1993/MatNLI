@@ -13,7 +13,7 @@ The present study demonstrate a parallel MATLAB implementation of an efficient n
 To run the inversion for a particular type of material model, change the current MATLAB directory to that folder and run file "InverseNLI.m".
 
 # Requirements:
-The Optimization toolbox in MATLAB is required. Make sure it is there in your MATLAB installtion.
+To run the algorithm, "Optimization Toolbox" and "Parallel Computing Toolbox" are required in MATLAB. Ensure that it is included in your MATLAB installation.
 
 
 
