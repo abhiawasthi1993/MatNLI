@@ -1,0 +1,39 @@
+clc; close all; clear all;
+
+%% LOAD DATA
+load('data.mat');       % Load data in workspace
+nn = mesh.nn;           % Number of material parameters
+
+%% INITIAL GUESS
+X0(1:nn,1) = 0.01*ones(nn,1);           % Initial guess for storage modulus
+X0(nn+[1:nn],1) = 0.001*ones(nn,1);     % Initial guess for loss modulus
+
+%% OBJECTIVE FUNCTION DEFINITION
+newfun = @(X) ObjFun(X,Um,mesh,Nu,Rho,Omega);
+
+%% SETTING OPTIONS FOR OPTIMIZATION MODULE
+options = optimoptions('fminunc',...
+		'PlotFcn',@optimplotfval,...
+		'OutputFcn', @plotPar,...
+		'Algorithm','quasi-newton',...
+		'HessUpdate','bfgs',...
+		'Display','iter-detailed',...
+		'SpecifyObjectiveGradient',true,...
+		'UseParallel',true,...
+		'MaxIter',10000,...
+		'MaxFunEvals',1e25,...
+		'OptimalityTolerance',eps,...
+		'TolX',eps,...
+		'TolFun',eps);
+
+%% CALL THE OPTIMIZER
+tic
+X = fminunc(newfun, X0, options);
+toc
+
+%% POST - PROCESSING
+plotSol(mesh.P,mesh.NCA,X(1:nn,1),10,'Predicted Storage Modulus');
+plotSol(mesh.P,mesh.NCA,X(nn+[1:nn],1),11,'Predicted Loss Modulus');
+
+plotSol(mesh.P,mesh.NCA,real(Gvec),12,'Actual Storage Modulus');
+plotSol(mesh.P,mesh.NCA,imag(Gvec),13,'Actual Loss Modulus');
