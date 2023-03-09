@@ -19,6 +19,7 @@ To run the algorithm, "***Optimization Toolbox***" and "***Parallel Computing To
 
 
 # Citing
+This repository has been developed as part of the following paper. We would appreciate it if you would please cite the following paper if you found the library useful for your work:
 
 ```
 @article{awasthi2023NLI,
