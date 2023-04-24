@@ -1,4 +1,4 @@
-<h1 align="center">MatNLI: An Open-source MATLAB-based solver for the Non-linear Inversion in Elastography <a href="https://www.sciencedirect.com/" class="button big">[Paper]</a></h1>
+<h1 align="center">MatNLI: An Open-source MATLAB-based solver for the Non-linear Inversion in Elastography <a href="https://www.sciencedirect.com/science/article/pii/S0965997823000686?dgcid=coauthor" class="button big">[Paper]</a></h1>
 
 #### **Data and codes for paper: MatNLI: An Open-source MATLAB-based solver for the Non-linear Inversion in Elastography**
 
@@ -19,17 +19,18 @@ To run the algorithm, "***Optimization Toolbox***" and "***Parallel Computing To
 
 
 # Citing
-This repository has been developed as part of the following paper (citation given below). We would appreciate it if you would please cite the following paper if you found the library useful for your work.
+This repository has been developed as part of the following article (citation given below). We would appreciate it if you would please cite the following paper if you found the library useful for your work.
 
 ```
 @article{awasthi2023NLI,
     title = {MatNLI: An Open-source MATLAB-based solver for the Non-linear Inversion in Elastography},
     author = {Abhilash Awasthi, Moirangthem Dinachandra, Puneet Mahajan, Ashish Suri, and Sitikantha Roy},
     journal = {Advances in Engineering Software},
-    pages = {},
+    volume = {181},
+    pages = {103476},
     year = {2023},
-    issn = {},
-    doi = {https://doi.org/},
-    url = {https://www.sciencedirect.com/science/article/}
+    issn = {0965-9978},
+    doi = {https://doi.org/10.1016/j.advengsoft.2023.103476},
+    url = {https://www.sciencedirect.com/science/article/pii/S0965997823000686?dgcid=coauthor}
 }
 ```
