@@ -22,14 +22,14 @@ To run the algorithm, "***Optimization Toolbox***" and "***Parallel Computing To
 This repository has been developed as part of the following article (citation given below). We would appreciate it if you would please cite the following paper if you found the library useful for your work.
 
 ```
-@article{awasthi2023NLI,
+@article{awasthi2023matnli,
     title = {MatNLI: An Open-source MATLAB-based solver for the Non-linear Inversion in Elastography},
-    author = {Abhilash Awasthi, Moirangthem Dinachandra, Puneet Mahajan, Ashish Suri, and Sitikantha Roy},
+    author = {Awasthi, Abhilash and Dinachandra, Moirangthem and Mahajan, Puneet and Suri, Ashish and Roy, Sitikantha},
     journal = {Advances in Engineering Software},
     volume = {181},
     pages = {103476},
     year = {2023},
-    issn = {0965-9978},
+    publisher={Elsevier},
     doi = {https://doi.org/10.1016/j.advengsoft.2023.103476},
     url = {https://www.sciencedirect.com/science/article/pii/S0965997823000686?dgcid=coauthor}
 }
